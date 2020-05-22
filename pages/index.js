@@ -1,16 +1,21 @@
 import Head from 'next/head'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
+import Timer from '../components/timer'
+import store from '../redux/store'
 
 export default function Home() {
   return (
-    <div className="container">
+    <Provider store={store} className="container">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <Timer></Timer>
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Learn <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
         <p className="description">
@@ -204,6 +209,6 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
+    </Provider>
   )
 }
