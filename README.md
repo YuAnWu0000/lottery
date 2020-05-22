@@ -1,1 +1,12 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+# lottery
+### 以Nest js實作的抽獎功能(React + Redux)
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run dev
+```
