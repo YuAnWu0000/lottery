@@ -1,11 +1,9 @@
 import Head from 'next/head'
 import React from 'react'
-import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import Timer from '../components/timer'
 import People from '../components/people'
 import store from '../redux/store'
-import Container  from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 
 export default function Home() {
